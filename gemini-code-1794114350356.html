@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cepads - Creative & Performance Agency</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        cepadsDark: '#111111',
+                        cepadsLilac: '#A855F7',
+                        cepadsLilacDark: '#9333EA',
+                        cepadsLime: '#BEF264',
+                        cepadsLimeHover: '#A3E635',
+                        cepadsLimeDark: '#65A30D',
+                        cepadsGray: '#F9FAFB'
+                    },
+                    animation: {
+                        'float': 'float 3s ease-in-out infinite',
+                        'float-delayed': 'float 3s ease-in-out 1.5s infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-12px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #FFFFFF; color: #111111; overflow-x: hidden; }
+        .hero-gradient { background: linear-gradient(180deg, #F9FAFB 0%, #FFFFFF 100%); }
+    </style>
+</head>
+<body class="antialiased selection:bg-cepadsLilac selection:text-white">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full top-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between h-20">
+            <a href="#" class="text-3xl font-extrabold tracking-tight text-cepadsDark hover:scale-105 transition-transform duration-200">Cepads<span class="text-cepadsLilac">.</span></a>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#" class="text-sm font-semibold text-gray-600 hover:text-cepadsLilac transition-colors hover:-translate-y-0.5 duration-200">Layanan Kita</a>
+                <a href="#" class="text-sm font-semibold text-gray-600 hover:text-cepadsLilac transition-colors hover:-translate-y-0.5 duration-200">Portofolio</a>
+                <a href="#" class="text-sm font-semibold text-gray-600 hover:text-cepadsLilac transition-colors hover:-translate-y-0.5 duration-200">Pricelist</a>
+                <!-- Gamified Nav Button -->
+                <a href="https://wa.me/6282228240721" target="_blank" class="text-sm font-bold bg-cepadsDark text-white px-6 py-2.5 rounded-full shadow-[0_4px_0_#9333EA] hover:bg-cepadsLilac hover:-translate-y-1 hover:shadow-[0_6px_0_#9333EA] active:translate-y-1 active:shadow-[0_0px_0_#9333EA] transition-all">
+                    Konsul Dulu Skuy ☕
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-gradient pt-40 pb-20 md:pt-48 md:pb-32 px-6 text-center relative">
+        <div class="max-w-5xl mx-auto relative z-10">
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-purple-50 text-cepadsLilacDark text-sm font-bold mb-8 border border-purple-100 shadow-sm animate-float">
+                <span class="relative flex h-2 w-2">
+                  <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-cepadsLilac opacity-75"></span>
+                  <span class="relative inline-flex rounded-full h-2 w-2 bg-cepadsLilac"></span>
+                </span>
+                POV: Lo nemu agency yang beneran ngerti algoritma. 💅
+            </div>
+            <h1 class="text-5xl md:text-7xl font-extrabold tracking-tighter leading-[1.1] mb-6">
+                Bikin Brand Lo Glow Up, <br class="hidden md:block"> No Boncos-Boncos Club.
+            </h1>
+            <p class="text-lg md:text-xl text-gray-600 mb-10 max-w-2xl mx-auto font-medium leading-relaxed">
+                Stop burning duit buat ads yang nyangkut. Kita bantu lo <strong class="font-extrabold text-cepadsLilac">scale up</strong> omset lewat Ads, Organik, dan Visual yang sat-set langsung FYP. No cap. 🧢
+            </p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-5">
+                <!-- Gamified Primary Button -->
+                <a href="https://wa.me/6282228240721" target="_blank" class="w-full sm:w-auto bg-cepadsLime text-cepadsDark font-extrabold text-lg px-8 py-4 rounded-full shadow-[0_6px_0_#65A30D] hover:bg-cepadsLimeHover hover:-translate-y-1 hover:shadow-[0_8px_0_#65A30D] active:translate-y-1.5 active:shadow-[0_0px_0_#65A30D] transition-all">
+                    Scale Up Sekarang 🚀
+                </a>
+                <!-- Gamified Secondary Button -->
+                <a href="#layanan" class="w-full sm:w-auto bg-white text-cepadsDark border-2 border-gray-200 font-bold text-lg px-8 py-4 rounded-full shadow-[0_6px_0_#E5E7EB] hover:border-cepadsLilac hover:text-cepadsLilacDark hover:-translate-y-1 hover:shadow-[0_8px_0_#A855F7] active:translate-y-1.5 active:shadow-[0_0px_0_#A855F7] transition-all">
+                    Kepo Layanan Kita 👀
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Pain Points Section -->
+    <section class="py-24 px-6 bg-cepadsDark text-white border-t border-gray-900">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight mb-4">Udah ngabisin budget tapi ROAS masih nangis? 😭</h2>
+                <p class="text-gray-400 font-medium">Relate sama salah satu masalah di bawah ini nggak?</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-[#1A1A1A] p-8 rounded-3xl border border-gray-800 hover:-translate-y-2 hover:border-red-500/50 transition-all duration-300">
+                    <div class="text-4xl mb-4 animate-float">📉</div>
+                    <h3 class="text-xl font-bold mb-2">Ads Boncos Melulu</h3>
+                    <p class="text-gray-400">Budget iklan abis jutaan, tapi lead yang masuk cuma nanya "harga brp?". CPA makin mahal nggak ngotak.</p>
+                </div>
+                <div class="bg-[#1A1A1A] p-8 rounded-3xl border border-gray-800 hover:-translate-y-2 hover:border-orange-500/50 transition-all duration-300">
+                    <div class="text-4xl mb-4 animate-float-delayed">🏜️</div>
+                    <h3 class="text-xl font-bold mb-2">Views Kering Kerontang</h3>
+                    <p class="text-gray-400">Capek bikin konten TikTok/Reels tiap hari tapi mentok di 200 views. Engagement <strong class="font-extrabold text-red-400">dead</strong> parah.</p>
+                </div>
+                <div class="bg-[#1A1A1A] p-8 rounded-3xl border border-gray-800 hover:-translate-y-2 hover:border-blue-500/50 transition-all duration-300">
+                    <div class="text-4xl mb-4 animate-float">👴</div>
+                    <h3 class="text-xl font-bold mb-2">Visual Keliatan Jadul</h3>
+                    <p class="text-gray-400">Desain feed sama video kayak editan bapak-bapak tahun 2010. Kurang <strong class="font-extrabold text-cepadsLilac">aesthetic</strong>, audiens keburu scroll.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section id="layanan" class="py-24 px-6 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight mb-4">Masuk Akal. Terus Solusinya Apa Bang? 🤔</h2>
+                <p class="text-gray-500 font-medium">Tenang, kita udah siapin amunisi buat nge-carry brand lo sampai win streak.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-cepadsGray p-10 rounded-3xl border-2 border-gray-100 hover:border-purple-300 hover:shadow-[0_10px_0_#D8B4FE] hover:-translate-y-3 transition-all duration-300 group cursor-crosshair">
+                    <div class="w-14 h-14 bg-white rounded-2xl flex items-center justify-center mb-8 shadow-sm text-cepadsLilac border border-gray-100 group-hover:scale-125 group-hover:rotate-12 transition-transform duration-300">
+                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3 tracking-tight">Performance Ads 🎯</h3>
+                    <p class="text-gray-600 font-medium leading-relaxed">Bukan sekadar bakar budget. Kita setting Meta & TikTok Ads pakai data, A/B testing brutal, dan strategi <strong class="font-extrabold text-cepadsLilac">retargeting</strong> yang bikin audiens lo checkout tanpa mikir.</p>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="bg-cepadsGray p-10 rounded-3xl border-2 border-gray-100 hover:border-lime-400 hover:shadow-[0_10px_0_#BEF264] hover:-translate-y-3 transition-all duration-300 group cursor-crosshair">
+                    <div class="w-14 h-14 bg-white rounded-2xl flex items-center justify-center mb-8 shadow-sm text-[#84CC16] border border-gray-100 group-hover:scale-125 group-hover:-rotate-12 transition-transform duration-300">
+                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3 tracking-tight">Organic Growth 📈</h3>
+                    <p class="text-gray-600 font-medium leading-relaxed">Bikin konten yang beneran FYP material. Mulai dari ideation, hook yang nendang, sampai scriptwriting. Biar engagement lo organik tapi profitnya brutal.</p>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="bg-cepadsGray p-10 rounded-3xl border-2 border-gray-100 hover:border-gray-800 hover:shadow-[0_10px_0_#111111] hover:-translate-y-3 transition-all duration-300 group cursor-crosshair">
+                    <div class="w-14 h-14 bg-white rounded-2xl flex items-center justify-center mb-8 shadow-sm text-cepadsDark border border-gray-100 group-hover:scale-125 group-hover:rotate-12 transition-transform duration-300">
+                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3 tracking-tight">Edit & Design 🎨</h3>
+                    <p class="text-gray-600 font-medium leading-relaxed">Stop pakai template gratisan. Kita buatin desain visual & <strong class="font-extrabold text-cepadsLilac">video editing</strong> yang <strong class="font-extrabold text-cepadsLilac">eye-catching, aesthetic</strong>, dan pastinya <strong class="font-extrabold text-cepadsLimeDark">convert</strong>. Bikin audiens lo stop scrolling.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Us Section -->
+    <section class="py-24 px-6 bg-cepadsGray border-y border-gray-100">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight mb-4">Kenapa Harus Cepads? (No Debat) 🤌</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
+                <div class="hover:scale-105 transition-transform duration-300">
+                    <div class="text-5xl mb-6 animate-float-delayed">⚡</div>
+                    <h3 class="text-xl font-bold mb-3">Sat-Set & Anti Lelet</h3>
+                    <p class="text-gray-600 font-medium">Revisi & eksekusi super cepet. Kita tau tren internet berubah tiap jam, jadi kita gerak secepat algoritma.</p>
+                </div>
+                <div class="hover:scale-105 transition-transform duration-300">
+                    <div class="text-5xl mb-6 animate-float">📊</div>
+                    <h3 class="text-xl font-bold mb-3">Data-Driven, Bukan Feeling</h3>
+                    <p class="text-gray-600 font-medium">Kita nggak pake dukun. Semua keputusan dibikin <strong class="font-extrabold text-cepadsLilac">base on</strong> data analitik & <strong class="font-extrabold text-cepadsLilac">split testing</strong> yang valid.</p>
+                </div>
+                <div class="hover:scale-105 transition-transform duration-300">
+                    <div class="text-5xl mb-6 animate-float-delayed">😎</div>
+                    <h3 class="text-xl font-bold mb-3">Gen Z Vibes, Pro Results</h3>
+                    <p class="text-gray-600 font-medium">Kita paham <strong class="font-extrabold text-cepadsLilac">culture</strong> internet, ngerti tren <strong class="font-extrabold text-cepadsLilac">meme</strong>, tapi yang paling kita ngerti: cara naikin omset lo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="py-24 px-6 bg-cepadsDark text-white text-center relative overflow-hidden">
+        <!-- Decoration -->
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-lg h-64 bg-cepadsLilac opacity-20 blur-[100px] rounded-full pointer-events-none"></div>
+        
+        <div class="max-w-4xl mx-auto relative z-10">
+            <h2 class="text-4xl md:text-5xl font-extrabold tracking-tight mb-8">Udah siap bikin kompetitor lo ketar-ketir? 🔥</h2>
+            <p class="text-xl text-gray-400 font-medium mb-10 max-w-xl mx-auto">Jangan sampai ketinggalan tren dan kehabisan audiens. <strong class="font-extrabold text-cepadsLime">Let's cook something good</strong> bareng tim Cepads.</p>
+            
+            <!-- Gamified Ultimate CTA Button -->
+            <a href="https://wa.me/6282228240721" target="_blank" class="inline-block bg-cepadsLime text-cepadsDark font-extrabold text-2xl px-12 py-6 rounded-full shadow-[0_8px_0_#65A30D] hover:bg-cepadsLimeHover hover:-translate-y-2 hover:shadow-[0_12px_0_#65A30D,0_0_40px_rgba(190,242,100,0.4)] active:translate-y-2 active:shadow-[0_0px_0_#65A30D] transition-all duration-200">
+                Gass Konsultasi Gratis! 👇
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 px-6 bg-white">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="text-2xl font-extrabold tracking-tight text-cepadsDark hover:rotate-2 transition-transform">Cepads<span class="text-cepadsLilac">.</span></div>
+            <div class="flex gap-6 text-sm font-semibold text-gray-500">
+                <a href="#" class="hover:text-cepadsLilac hover:-translate-y-1 transition-all">TikTok</a>
+                <a href="#" class="hover:text-cepadsLilac hover:-translate-y-1 transition-all">Instagram</a>
+                <a href="https://wa.me/6282228240721" target="_blank" class="hover:text-cepadsLimeDark hover:-translate-y-1 transition-all">WhatsApp</a>
+            </div>
+            <p class="text-sm font-medium text-gray-400">&copy; 2026 Cepads Agency. Stay chill & profitable.</p>
+        </div>
+    </footer>
+</body>
+</html>
